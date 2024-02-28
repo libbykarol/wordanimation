@@ -1,0 +1,123 @@
+/* this is where all of your CSS styles go */
+
+.mono {
+	font-family: 'monospace';
+	font-size: 6em;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+
+}
+
+.grid_container {
+	position: absolute;
+	width: 800px;
+	height: 190px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@keyframes m_move {
+	0% { top: 0px; left: 0px; color: black; }
+	50% { color: hotpink; }
+	100% { top: 300px; left: 180px; color: hotpink; }
+}
+
+
+.m {
+	position: relative;
+	animation: m_move 3s infinite alternate cubic-bezier(0.5,0,0,1);
+	animation-delay: 1s;
+
+}
+
+@keyframes o_move {
+	0% { top: 0px; left: 0px;color: black; }
+	50% { color: hotpink; }
+	100% { top: 300px; left: 175px; color: hotpink; }
+	}
+
+
+.o {
+	position: relative;
+	animation: o_move 3s infinite alternate cubic-bezier(0.5,0,0,1);
+	animation-delay: 1s;
+}
+
+
+@keyframes d_fadeout {
+	0% {opacity: 1; }
+	100% { opacity: 0; }
+
+}
+
+.d {
+	opacity: 1;
+	animation: d_fadeout 3s infinite alternate;
+	animation-delay: 1s;
+}
+
+@keyframes e_fadeout {
+	0% {opacity: 1; }
+	100% { opacity: 0; }
+}
+
+.e1 {
+	opacity: 1;
+	animation: e_fadeout 3s infinite alternate;
+	animation-delay: 1s;
+
+}
+
+@keyframes r_move {
+	0% { top: 0px; color: black; }
+	50% { color: hotpink; }
+	100% { top: 300px; color: hotpink; }
+}
+
+
+.r {
+	position: relative;
+	animation: r_move 3s infinite alternate cubic-bezier(0.5,0,0,1);
+	animation-delay: 1s;
+}
+
+
+@keyframes a_fadoout {
+	0% {opacity: 1; }
+	100% { opacity: 0 }
+}
+
+.a {
+	opacity: 1;
+	animation: t_fadeout 3s infinite alternate;
+	animation-delay: 1s;
+}
+
+@keyframes t_fadeout {
+	0% {opacity: 1; }
+	100% { opacity: 0; }
+
+}
+
+.t {
+	opacity: 1;
+	animation: t_fadeout 3s infinite alternate;
+	animation-delay: 1s;
+}
+
+@keyframes e_move {
+	0% { top: 0px; left: 0px; color: black; }
+	50% { color: hotpink; }
+	100% { top: 300px; left: -175px; color: hotpink;}
+}
+
+
+.e2 {
+	position: relative;
+	animation: e_move 3s infinite alternate cubic-bezier(0.5,0,0,1);
+	animation-delay: 1s;
+
+}
+
